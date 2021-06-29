@@ -1,0 +1,16 @@
+
+import sys
+n = len(sys.argv)
+print("Total arguments passed:", n)
+
+print("\nName of Python:", sys.argv[0])
+
+print("\nArguments passed:", end = " ")
+for i in range(1, n):
+	print(sys.argv[i], end = " ")
+	
+Sub = 0
+for i in range(1, n):
+	Sub -= int(sys.argv[i])
+	
+print("\n\nResult:", Sub)
